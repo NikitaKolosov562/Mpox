@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Home Page</h1>
+	 <form action='/response'>
+      <label for="artist">Out of these 3 Musical Artists who is your favorite, Taylor Swift, The Weeknd, or Travis Scott?</label>
+      <br>
+      <input type="text" name="artist" id="artist">
+      
+      
+      
+    
+	  <br>
+	  <label for="artist2">Out of these 3 Musical Artists who is your favorite, Nettspend, Baby Kia, or Osamason?</label>
+      <br>
+      <input type="text" name="artist2" id="artist2">
+	  <br>
+      <input type="submit">
+    </form>
+
+{% endblock %}
